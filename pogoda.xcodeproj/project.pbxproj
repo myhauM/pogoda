@@ -3,19 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E057A2C24463ADF00B96E36 /* ManagerPogody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E057A2B24463ADF00B96E36 /* ManagerPogody.swift */; };
+		4E3A08DE244E11D2005905E2 /* LinkDoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3A08DD244E11D2005905E2 /* LinkDoAPI.swift */; };
+		4E73BD5B243E5E73007145DB /* ModelPogody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E73BD5A243E5E73007145DB /* ModelPogody.swift */; };
 		4EDEB637243D0DB800F9E8B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDEB636243D0DB800F9E8B9 /* AppDelegate.swift */; };
 		4EDEB639243D0DB800F9E8B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDEB638243D0DB800F9E8B9 /* SceneDelegate.swift */; };
 		4EDEB63B243D0DB800F9E8B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDEB63A243D0DB800F9E8B9 /* ViewController.swift */; };
 		4EDEB63E243D0DB800F9E8B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEB63C243D0DB800F9E8B9 /* Main.storyboard */; };
 		4EDEB640243D0DB900F9E8B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEB63F243D0DB900F9E8B9 /* Assets.xcassets */; };
 		4EDEB643243D0DB900F9E8B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEB641243D0DB900F9E8B9 /* LaunchScreen.storyboard */; };
+		848A1C632ED0C9EFB1172202 /* Pods_pogoda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D90275089F4E88467D8A2BE /* Pods_pogoda.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D90275089F4E88467D8A2BE /* Pods_pogoda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pogoda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E057A2B24463ADF00B96E36 /* ManagerPogody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerPogody.swift; sourceTree = "<group>"; };
+		4E3A08DD244E11D2005905E2 /* LinkDoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkDoAPI.swift; sourceTree = "<group>"; };
+		4E73BD5A243E5E73007145DB /* ModelPogody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPogody.swift; sourceTree = "<group>"; };
 		4EDEB633243D0DB800F9E8B9 /* pogoda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pogoda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EDEB636243D0DB800F9E8B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EDEB638243D0DB800F9E8B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,8 @@
 		4EDEB63F243D0DB900F9E8B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EDEB642243D0DB900F9E8B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EDEB644243D0DB900F9E8B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D47D618F5B513A8E99785609 /* Pods-pogoda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pogoda.release.xcconfig"; path = "Target Support Files/Pods-pogoda/Pods-pogoda.release.xcconfig"; sourceTree = "<group>"; };
+		DBC81EAEA87004D5A402B490 /* Pods-pogoda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pogoda.debug.xcconfig"; path = "Target Support Files/Pods-pogoda/Pods-pogoda.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848A1C632ED0C9EFB1172202 /* Pods_pogoda.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E73BD55243E5C4C007145DB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4EDEB63A243D0DB800F9E8B9 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4E73BD56243E5C53007145DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4EDEB63C243D0DB800F9E8B9 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4E73BD59243E5C70007145DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E73BD5A243E5E73007145DB /* ModelPogody.swift */,
+				4E057A2B24463ADF00B96E36 /* ManagerPogody.swift */,
+				4E3A08DD244E11D2005905E2 /* LinkDoAPI.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		4EDEB62A243D0DB800F9E8B9 = {
 			isa = PBXGroup;
 			children = (
 				4EDEB635243D0DB800F9E8B9 /* pogoda */,
 				4EDEB634243D0DB800F9E8B9 /* Products */,
+				F5E5E94F6D71E58C91B989F0 /* Pods */,
+				DA4DC0CE4329A984DC3E545C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +97,31 @@
 			children = (
 				4EDEB636243D0DB800F9E8B9 /* AppDelegate.swift */,
 				4EDEB638243D0DB800F9E8B9 /* SceneDelegate.swift */,
-				4EDEB63A243D0DB800F9E8B9 /* ViewController.swift */,
-				4EDEB63C243D0DB800F9E8B9 /* Main.storyboard */,
+				4E73BD59243E5C70007145DB /* Model */,
+				4E73BD55243E5C4C007145DB /* Controller */,
+				4E73BD56243E5C53007145DB /* View */,
 				4EDEB63F243D0DB900F9E8B9 /* Assets.xcassets */,
 				4EDEB641243D0DB900F9E8B9 /* LaunchScreen.storyboard */,
 				4EDEB644243D0DB900F9E8B9 /* Info.plist */,
 			);
 			path = pogoda;
+			sourceTree = "<group>";
+		};
+		DA4DC0CE4329A984DC3E545C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D90275089F4E88467D8A2BE /* Pods_pogoda.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5E5E94F6D71E58C91B989F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBC81EAEA87004D5A402B490 /* Pods-pogoda.debug.xcconfig */,
+				D47D618F5B513A8E99785609 /* Pods-pogoda.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EDEB647243D0DB900F9E8B9 /* Build configuration list for PBXNativeTarget "pogoda" */;
 			buildPhases = (
+				C0BAFED46A57F1036BA8EFE1 /* [CP] Check Pods Manifest.lock */,
 				4EDEB62F243D0DB800F9E8B9 /* Sources */,
 				4EDEB630243D0DB800F9E8B9 /* Frameworks */,
 				4EDEB631243D0DB800F9E8B9 /* Resources */,
+				20C70F12E19EAD4EF07B9415 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +192,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		20C70F12E19EAD4EF07B9415 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pogoda/Pods-pogoda-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pogoda/Pods-pogoda-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pogoda/Pods-pogoda-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0BAFED46A57F1036BA8EFE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pogoda-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4EDEB62F243D0DB800F9E8B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4EDEB63B243D0DB800F9E8B9 /* ViewController.swift in Sources */,
+				4E3A08DE244E11D2005905E2 /* LinkDoAPI.swift in Sources */,
 				4EDEB637243D0DB800F9E8B9 /* AppDelegate.swift in Sources */,
+				4E057A2C24463ADF00B96E36 /* ManagerPogody.swift in Sources */,
 				4EDEB639243D0DB800F9E8B9 /* SceneDelegate.swift in Sources */,
+				4E73BD5B243E5E73007145DB /* ModelPogody.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +386,7 @@
 		};
 		4EDEB648243D0DB900F9E8B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBC81EAEA87004D5A402B490 /* Pods-pogoda.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +405,7 @@
 		};
 		4EDEB649243D0DB900F9E8B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D47D618F5B513A8E99785609 /* Pods-pogoda.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
